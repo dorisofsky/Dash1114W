@@ -142,10 +142,10 @@
           });
 
         var timechart =dc.barChart("#dis_time")
-            .width(750)
+            .width(770)
             .height(250)
             .transitionDuration(500)
-            .margins({top: 7, right: 0, bottom: 45, left: 55})
+            .margins({top: 7, right: 0, bottom: 47, left: 55})
             .dimension(hourdim)
             .group(FloodGroup,"Flood")
             .stack(LandslideGroup,"Landslide")
@@ -153,7 +153,7 @@
             .colors(function(disastertype){ return colorScale(disastertype); })
             .elasticY(true)
             .renderHorizontalGridLines(true)
-            .mouseZoomable(true)
+            .mouseZoomable(false)
             .x(d3.time.scale().domain([minTime, maxTime]))
             .xAxisLabel("Date")
             .centerBar(true)
