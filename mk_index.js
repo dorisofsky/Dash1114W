@@ -142,10 +142,10 @@
           });
 
         var timechart =dc.barChart("#dis_time")
-            .width(730)
-            .height(200)
+            .width(750)
+            .height(250)
             .transitionDuration(500)
-            .margins({top: 7, right: 0, bottom: 45, left: 50})
+            .margins({top: 7, right: 0, bottom: 45, left: 55})
             .dimension(hourdim)
             .group(FloodGroup,"Flood")
             .stack(LandslideGroup,"Landslide")
