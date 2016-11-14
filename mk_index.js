@@ -43,7 +43,7 @@
       csv("./Morakot/typhoondata.csv", function(data) {
 
 //時間這邊有新增(以下)
-        var timeAllparse = d3.time.format("%Y-%m-%e %H:%M").parse, 
+        var timeAllparse = d3.time.format("%Y/%m/%e %H:%M").parse, 
             dateformat = d3.time.format("%Y/%m/%d"), 
             timeformat = d3.time.format("%H:%M"); 
 
