@@ -40,10 +40,10 @@
     function draw() {
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
-      csv("https://elsiehsieh.github.io/Dashboard1017/nfa2.csv", function(data) {
+      csv("nfa3.csv", function(data) {
 
 //時間這邊有新增(以下)
-        var timeAllparse = d3.time.format("%Y/%m/%e %H:%M").parse, 
+        var timeAllparse = d3.time.format("%Y-%m-%e %H:%M").parse, 
             dateformat = d3.time.format("%Y/%m/%d"), 
             timeformat = d3.time.format("%H:%M"); 
 
