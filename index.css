@@ -130,7 +130,7 @@ div.data_count {
 
 #dis_time .x.axis text {
   text-anchor: end !important;
-  transform: rotate(-28deg);
+  transform: rotate(-18deg);
 }
 
 #dis_pie {
