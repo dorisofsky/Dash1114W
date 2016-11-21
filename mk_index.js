@@ -49,7 +49,7 @@ var database = "nfa3.csv";
       csv(database, function(data) {
 
 //時間這邊有新增(以下)
-        var timeAllparse = d3.time.format("%Y/%m/%e %H:%M").parse, 
+        var timeAllparse = d3.time.format("%Y-%m-%e %H:%M").parse, 
             dateformat = d3.time.format("%Y/%m/%d"), 
             timeformat = d3.time.format("%H:%M"); 
 
