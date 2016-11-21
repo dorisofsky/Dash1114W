@@ -187,9 +187,6 @@ var csvDatabase = "nfa3.csv";
         dc.renderAll();
       });
 
-    }
-
-
 function load_button(file) {
     return function load_it() {
         d3.csv(file, function(data) {
@@ -203,3 +200,7 @@ function load_button(file) {
 var button1 = load_button("./Morakot/typhoondata.csv"),
     button2 = load_button("morley2.csv"),
     button3 = load_button("morley3.csv");
+
+    }
+
+
