@@ -187,11 +187,10 @@ var csvDatabase = "nfa3.csv";
         dc.renderAll();
       });
 
-
+d3.select('#Morakot_button').on('click', function(){
+    csvDatabase = "./Morakot/typhoondata.csv";
+    //ndx = crossfilter(data);
+    dc.redrawAll();
+});
 
     }
-
-    d3.select('#Morakot_button').on('click', function(){
-    var csvDatabase = "./Morakot/typhoondata.csv";
-    draw();
-});
