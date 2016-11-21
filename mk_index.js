@@ -75,6 +75,7 @@
         var colorScale = d3.scale.ordinal().domain(["Flood", "Landslide", "Traffic", "Flood&Landslide", "Flood&Traffic", "Traffic&Landslide", "Flood&Traffic&Landslide"])
                                            .range(["#14999e", "#ECA400", "#E85F5C","#999999","#999999","#999999","#999999"]);
 
+        //新增minTime、maxTime
         var minTime = timedim.bottom(1)[0].parseTime;
         var maxTime = timedim.top(1)[0].parseTime;
 
@@ -141,6 +142,7 @@
             some: '/%total-count'
           });
 
+        //timechart已修改
         var timechart =dc.barChart("#dis_time")
             .width(770)
             .height(250)
