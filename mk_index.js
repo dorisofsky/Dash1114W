@@ -39,14 +39,12 @@
 
     function draw() {
 
-d3.select('#Morakot_button').on('click', function(){
-    var database = "./Morakot/typhoondata.csv";
-});
 
-var database = "nfa3.csv";
+
+var csvDatabase = "nfa3.csv";
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
-      csv(database, function(data) {
+      csv(csvDatabase, function(data) {
 
 //時間這邊有新增(以下)
         var timeAllparse = d3.time.format("%Y-%m-%e %H:%M").parse, 
@@ -189,4 +187,10 @@ var database = "nfa3.csv";
 
         dc.renderAll();
       });
+
+d3.select('#Morakot_button').on('click', function(){
+    var csvDatabase = "./Morakot/typhoondata.csv";
+    dc.redrawAll();
+});
+
     }
