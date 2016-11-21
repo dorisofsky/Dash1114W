@@ -189,7 +189,7 @@ var csvDatabase = "nfa3.csv";
 
 function load_button(file) {
     return function load_it() {
-        d3.csv(file, function(data) {
+        csv(file, function(data) {
             ndx.remove();
             ndx.add(data);
             dc.redrawAll();
