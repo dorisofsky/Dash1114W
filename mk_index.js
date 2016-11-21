@@ -43,7 +43,7 @@ var button1, ndx;
 
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
-      csv("nfa3.csv", function(data) {
+      csv("nfa3.csv", function(error,data) {
 
 //時間這邊有新增(以下)
         var timeAllparse = d3.time.format("%Y-%m-%e %H:%M").parse, 
@@ -189,7 +189,7 @@ var button1, ndx;
 
 function load_button(file) {
     return function load_it() {
-        csv(file, function(data) {
+        csv(file, function(error,data) {
             ndx.remove();
             ndx.add(data);
             dc.redrawAll();
