@@ -34,7 +34,7 @@
       });
     });
 
-
+var MKmarker = dc_leaflet.markerChart("#map")
 
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
@@ -78,7 +78,8 @@
         var maxTime = timedim.top(1)[0].parseTime;
 
 
-        var MKmarker = dc_leaflet.markerChart("#map")
+       // var MKmarker = dc_leaflet.markerChart("#map")
+        MKmarker
           .dimension(facilities)
           .group(facilitiesGroup)
           .width(380)
