@@ -37,11 +37,10 @@
       draw()
     });
 
-    function draw() {
-
-
 
 var csvDatabase = "nfa3.csv";
+    function draw() {
+
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
       csv(csvDatabase, function(data) {
@@ -188,9 +187,11 @@ var csvDatabase = "nfa3.csv";
         dc.renderAll();
       });
 
-d3.select('#Morakot_button').on('click', function(){
-    var csvDatabase = "./Morakot/typhoondata.csv";
-    dc.redrawAll();
-});
+
 
     }
+
+    d3.select('#Morakot_button').on('click', function(){
+    var csvDatabase = "./Morakot/typhoondata.csv";
+    draw();
+});
