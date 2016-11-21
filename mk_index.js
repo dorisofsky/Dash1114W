@@ -38,7 +38,7 @@
     });
 
 
-var button1;
+var button1, ndx;
     function draw() {
 
 
@@ -58,7 +58,7 @@ var button1;
 //時間這邊有新增(以上)
 
 
-        var ndx = crossfilter(data);
+        ndx = crossfilter(data);
         var townId = ndx.dimension(function(d) { return d["TOWN_ID"]; });
      
         var facilities = ndx.dimension(function(d) { return d["geo"]; });
