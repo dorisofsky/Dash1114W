@@ -39,8 +39,15 @@
 
     function draw() {
 
+// d3.select('#Morakot_button').on('click', function(){
+//     timeDimension.filterRange([ndmonth, maxDate]);
+//     dc.redrawAll();
+// });
+
+var database = "./Morakot/typhoondata.csv";
+
       var csv = d3.dsv(",", "text/csv;charset=big5");
-      csv("./Morakot/typhoondata.csv", function(data) {
+      csv(database, function(data) {
 
 //時間這邊有新增(以下)
         var timeAllparse = d3.time.format("%Y/%m/%e %H:%M").parse, 
