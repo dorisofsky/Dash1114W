@@ -43,7 +43,7 @@
 //     var database = "./Morakot/typhoondata.csv";
 // });
 
-var database = "./Morakot/nfa3.csv";
+var database = "nfa3.csv";
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
       csv(database, function(data) {
