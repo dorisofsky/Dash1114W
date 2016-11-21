@@ -33,8 +33,13 @@
         }
       });
     });
+    $(document).ready(function() {
+      draw()
+    });
 
-var MKmarker = dc_leaflet.markerChart("#map")
+
+
+    function draw() {
 
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
@@ -78,8 +83,7 @@ var MKmarker = dc_leaflet.markerChart("#map")
         var maxTime = timedim.top(1)[0].parseTime;
 
 
-       // var MKmarker = dc_leaflet.markerChart("#map")
-        MKmarker
+        var MKmarker = dc_leaflet.markerChart("#map")
           .dimension(facilities)
           .group(facilitiesGroup)
           .width(380)
@@ -183,18 +187,20 @@ var MKmarker = dc_leaflet.markerChart("#map")
         dc.renderAll();
       });
 
-// function load_button(file) {
-//     return function load_it() {
-//         csv(file, function(data) {
-//             ndx.remove();
-//             ndx.add(data);
-//             dc.redrawAll();
-//         });
-//     };
-// }
+function load_button(file) {
+    return function load_it() {
+        csv(file, function(data) {
+            ndx.remove();
+            ndx.add(data);
+            dc.redrawAll();
+        });
+    };
+}
 
-// var button1 = load_button("./Morakot/typhoondata.csv"),
-//     button2 = load_button("morley2.csv"),
-//     button3 = load_button("morley3.csv");
+var button1 = load_button("./Morakot/typhoondata.csv"),
+    button2 = load_button("morley2.csv"),
+    button3 = load_button("morley3.csv");
+
+    }
 
 
