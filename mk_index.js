@@ -38,12 +38,12 @@
     });
 
 
-var csvDatabase = "nfa3.csv";
+
     function draw() {
 
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
-      csv(csvDatabase, function(data) {
+      csv("nfa3.csv", function(data) {
 
 //時間這邊有新增(以下)
         var timeAllparse = d3.time.format("%Y-%m-%e %H:%M").parse, 
