@@ -39,9 +39,9 @@
 
     function draw() {
 
-d3.select('#Morakot_button').on('click', function(){
-    var database = "./Morakot/typhoondata.csv";
-});
+// d3.select('#Morakot_button').on('click', function(){
+//     var database = "./Morakot/typhoondata.csv";
+// });
 
 var database = "./Morakot/nfa3.csv";
 
