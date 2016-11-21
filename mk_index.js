@@ -38,7 +38,7 @@
     });
 
 
-
+var button1;
     function draw() {
 
 
@@ -197,9 +197,8 @@ function load_button(file) {
     };
 }
 
-var button1 = load_button("./Morakot/typhoondata.csv"),
-    button2 = load_button("morley2.csv"),
-    button3 = load_button("morley3.csv");
+button1 = load_button("./Morakot/typhoondata.csv");
+   
 
     }
 
