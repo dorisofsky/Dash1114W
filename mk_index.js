@@ -33,13 +33,14 @@
         }
       });
     });
-    $(document).ready(function() {
-      draw()
-    });
+    // $(document).ready(function() {
+    //   draw()
+    // });
 
 
 var button1, ndx;
-    function draw() {
+
+    // function draw() {
 
 
       var csv = d3.dsv(",", "text/csv;charset=big5");
@@ -200,6 +201,6 @@ function load_button(file) {
 button1 = load_button("./Morakot/typhoondata.csv");
    
 
-    }
+    // }
 
 
