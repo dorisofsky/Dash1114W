@@ -188,19 +188,19 @@ var button1, ndx;
         dc.renderAll();
       });
 
-function load_button(file) {
-    return function load_it() {
-        csv(file, function(error,data) {
-            ndx.remove();
-            ndx.add(data);
-            dc.redrawAll();
-        });
-    };
-}
+// function load_button(file) {
+//     return function load_it() {
+//         csv(file, function(error,data) {
+//             ndx.remove();
+//             ndx.add(data);
+//             dc.redrawAll();
+//         });
+//     };
+// }
 
-button1 = load_button("./Morakot/typhoondata.csv");
+// button1 = load_button("./Morakot/typhoondata.csv");
    
 
-    // }
+//     }
 
 
